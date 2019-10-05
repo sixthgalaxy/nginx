@@ -28,7 +28,7 @@ steps:
     regionName: 'eu-west-1'
     imageSource: 'imagename'
     sourceImageName: 'nginx'
-    repositoryName: '607281769355.dkr.ecr.eu-west-1.amazonaws.com/uat'
+    repositoryName: 'uat'
 
 - task: Bash@3
   displayName: Name of the docker image
