@@ -17,6 +17,7 @@ steps:
     Dockerfile: Dockerfile
 
 - task: Bash@3
+  displayName: Name of the docker image
   inputs:
     targetType: 'inline'
     script: docker image ls
