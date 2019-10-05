@@ -15,17 +15,11 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: Dockerfile
-- task: imagename
-    command: docker image ls
 
-- task: ECRPushImage@1
+- task: Bash@3
   inputs:
-    awsCredentials: 'aws_uat'
-    regionName: 'eu-west-1'
-    imageSource: 'imagename'
-    sourceImageName: 'uat'
-    sourceImageTag: 
-    repositoryName: '607281769355.dkr.ecr.eu-west-1.amazonaws.com/uat'
+    targetType: 'inline'
+    script: docker image ls
 
 
 
