@@ -30,6 +30,12 @@ steps:
     sourceImageName: 'nginx'
     repositoryName: '607281769355.dkr.ecr.eu-west-1.amazonaws.com/uat'
 
+- task: Bash@3
+  displayName: Name of the docker image
+  inputs:
+    targetType: 'inline'
+    script: docker image ls
+
 
 
 
