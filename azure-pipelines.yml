@@ -15,6 +15,7 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: Dockerfile
+- task: imagename
     command: docker image ls
 
 - task: ECRPushImage@1
