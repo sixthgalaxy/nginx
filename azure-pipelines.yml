@@ -16,5 +16,13 @@ steps:
     command: build
     Dockerfile: Dockerfile
 
+- task: ECRPushImage@1
+  inputs:
+    awsCredentials: 'aws_uat'
+    regionName: 'eu-west-1'
+    imageSource: 'imagename'
+    sourceImageName: '$(imageName)'
+    repositoryName: '607281769355.dkr.ecr.eu-west-1.amazonaws.com/uat'
+
 
 
