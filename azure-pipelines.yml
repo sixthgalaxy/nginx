@@ -4,7 +4,7 @@ trigger:
     awsCredentials: 'aws_uat'
     regionName: 'eu-west-1'
     imageSource: 'imagename'
-    sourceImageName: 'nginx-c'
+    sourceImageName: 'nginx'
     repositoryName: '607281769355.dkr.ecr.eu-west-1.amazonaws.com/uat'
 - master
 
