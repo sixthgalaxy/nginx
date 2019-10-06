@@ -28,7 +28,8 @@ steps:
     awsCredentials: 'aws_uat'
     regionName: 'eu-west-1'
     imageSource: 'imagename'
-    sourceImageName: 'alpine'
+    sourceImageName: 'pipelines-javascript-docker'
+    sourceImageTag: 
     repositoryName: 'uat'
 
 
