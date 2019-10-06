@@ -27,7 +27,7 @@ steps:
     awsCredentials: 'aws_uat'
     regionName: 'eu-west-1'
     imageSource: 'imagename'
-    sourceImageName: 'nginx'
+    sourceImageName: 'pipelines-javascript-docker'
     repositoryName: 'uat'
 
 - task: Bash@3
