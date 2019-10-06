@@ -13,7 +13,7 @@ steps:
   displayName: Build an image
   inputs:
     repository: $(imageName)
-    command: build
+    command: docker build -t uat:latest .
     Dockerfile: Dockerfile
 
 - task: Bash@3
