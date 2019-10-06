@@ -13,6 +13,7 @@ steps:
   displayName: Build an image
   inputs:
     repository: $(imageName)
+    command: build
     Dockerfile: Dockerfile
 
 - task: Bash@3
