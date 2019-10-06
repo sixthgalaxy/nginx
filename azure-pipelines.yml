@@ -26,7 +26,7 @@ steps:
     awsCredentials: 'aws_uat'
     regionName: 'eu-west-1'
     imageSource: 'imagename'
-    sourceImageName: 'uat'
+    sourceImageName: 'httpd'
     repositoryName: 'uat'
 
 - task: Bash@3
