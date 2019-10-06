@@ -21,6 +21,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: docker image ls
+    
 
 - task: ECRPushImage@1
   inputs:
