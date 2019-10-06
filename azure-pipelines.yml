@@ -13,7 +13,6 @@ steps:
   displayName: Build an image
   inputs:
     repository: $(imageName)
-    command: docker build -t uat:latest .
     Dockerfile: Dockerfile
 
 - task: Bash@3
@@ -27,7 +26,7 @@ steps:
     awsCredentials: 'aws_uat'
     regionName: 'eu-west-1'
     imageSource: 'imagename'
-    sourceImageName: '$(Build.Repository.Name)'
+    sourceImageName: 'uat'
     repositoryName: 'uat'
 
 - task: Bash@3
