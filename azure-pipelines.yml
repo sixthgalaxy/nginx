@@ -15,6 +15,7 @@ steps:
     repository: $(imageName)
     command: build
     Dockerfile: Dockerfile
+    tags: latest
 
 - task: Bash@3
   displayName: Name of the docker image
